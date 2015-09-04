@@ -7,6 +7,7 @@ body{
 *{
 	text-decoration: none;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 
@@ -36,7 +37,6 @@ body{
 	text-align: left;
 	padding: 0.5em;
 }
-
 
 
 
@@ -71,16 +71,45 @@ body{
 .sideNavBox{
 	background: white;
 	border-bottom: 5px solid #7f8c8d;
-	overflow: auto;
 	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin: auto;
+	overflow: auto;
 }
 
+.sideNavContainer{
+	overflow: hidden;
+	display: inline-block;
+}
+
+.sideNavList{
+	position: relative;
+	left:8px;
+	padding: 0px;
+}
 
 .sideNavTopList{
+	float: left;
+	position: relative;
+	margin: 10px;
 	text-align: left;
 	display: inline-block;
 	list-style-type: none;
 	padding-left: 0px;
+}
+
+.sideNavButton{
+	padding: 1px;
+	margin: 4px;
+}
+
+.sideNavTopButton a{
+	color: black;
+}
+
+.sideNavButton a{
+	color: #95a5a6;
 }
 
 
@@ -89,7 +118,28 @@ body{
 /*CONTENT BOX*/
 
 .contentBox{
+	padding: 3.5rem 2rem 5rem 2rem;
 	margin-bottom: 20px;
 	background: white;
 }
+
+.articleTitle{
+	padding-bottom:3.5rem;
+	font-size: 1.5rem;
+}
+
+.text{
+	padding-left: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+.sectionTitle{
+	font-size: 1.1rem;
+	border-bottom: 2px solid #95a5a6;
+	padding: 8px;
+	margin-bottom: 1.5rem;
+}
+
+
+
 
