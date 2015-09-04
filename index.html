@@ -56,9 +56,9 @@
 				</p>
 				<table class="table">
 					<tr class="tableHeadRow">
-						<th class="tableHeadData">What</th>
-						<th class="tableHeadData">Where</th>
-						<th class="tableHeadData">How</th>
+						<th class="tableRowData">What</th>
+						<th class="tableRowData">Where</th>
+						<th class="tableRowData">How</th>
 					</tr>
 					<tr class="tableRow">
 						<td class="tableRowData">HTML</td>
@@ -95,11 +95,13 @@
 				<p class="text">
 					Sed nibh purus, vehicula eu gravida et, semper quis lectus. Proin sit amet rhoncus quam. Phasellus viverra, ex hendrerit pharetra elementum, elit mi gravida nisl, ut condimentum nisl urna id neque. Integer ut mauris quis dolor laoreet vestibulum. Etiam vestibulum eros vitae posuere blandit. Maecenas vulputate lacus non erat fermentum, nec hendrerit metus luctus. Praesent et purus nec eros lacinia tincidunt eu a mauris.
 				</p>
-				<pre class="codeExample">
-					$('#myElement').click(function(){
-					  console.log('Clicked!')
-					});
-				</pre>
+				<div class="codeExample">
+					<pre class="codeContainer">
+$('#myElement').click(function(){
+  console.log('Clicked!')
+});
+					</pre>
+				</div>
 				<p class="text">
 					Donec sed lacinia sem, at pellentesque ante. Aenean faucibus rhoncus posuere. Cras suscipit metus dui, at vestibulum orci venenatis interdum. Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim. 
 				</p>
@@ -110,8 +112,10 @@
 				<p class="text">
 					Sed eu bibendum massa. Sed sagittis lobortis odio at dapibus. Phasellus pulvinar rutrum nulla. Nunc efficitur bibendum augue nec dictum. Vestibulum suscipit feugiat sapien, nec ultrices arcu feugiat id. Sed dictum, enim eu euismod venenatis, ligula nunc laoreet neque, non vulputate ipsum diam sit amet diam. In hac habitasse platea dictumst. 
 				</p>
-				<img class="bannerImage" src="http://placehold.it/450x100">
-				<ol class="list">
+				<div class="bannerImageContainer">
+					<img class="bannerImage" src="http://placehold.it/450x100">
+				</div>
+				<ol class="numberedList">
 					<li class="listItem">
 						<span class="boldText">Create HTML:&nbsp;</span> Quisque vitae odio laoreet, tempor sapien vitae, ultricies eros. Vestibulum porta nisi nec lorem convallis, gravida gravida risus pellentesque.
 					</li>
@@ -122,72 +126,113 @@
 						<span class="boldText">Profit:&nbsp;</span>Sed tincidunt tempus erat, quis fringilla massa viverra eu. Nulla id neque vitae mi consequat rutrum imperdiet et augue. In lobortis tortor vel ipsum commodo, tincidunt scelerisque felis condimentum. Fusce vel tristique justo, non sodales dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer elementum quis lorem sed euismod. Quisque at feugiat augue. Phasellus sollicitudin elit placerat porta ullamcorper. 
 					</li>
 				</ol>
-				<p class="otherText">
+				<p class="revisionStatus">
 					Posted by<span class="boldText">&nbsp;Author&nbsp;</span>under<span class="boldText">&nbsp;Web>Dev&nbsp;</span>on<span class="boldText">&nbsp;January 13, 2014&nbsp;</span>.
 				</p>
 				<h2 class="title sectionTitle">Comments</h2>
-				<p class="otherText">
-					USER INFO
-				</p>
-				<hr class="line">
-				<form class="form">
-					<div class="formtext">
-						Email
+				<div class="linecontainerparent">
+					<div class="linecontainerchild">
+						<hr class="line">
 					</div>
-					<input type="text" name="email" class="formBox formBoxSmall">
-					<div class="formtext">
-						Display Name
-					</div>			
-					<input type="text" name="displayname" class="formBox formBoxSmall">
-					<div class="formtext">
-						Website
+					<p class="revisionStatus cutText">
+						USER INFO
+					</p>
+				</div>
+				<div class="tableContainer">
+					<table class="formTable">
+						<form class="form">
+						<tr>
+							<td class="formPadding">
+								<div class="formtext">
+									Email
+								</div>
+							</td>
+							<td class="formPadding">
+								<input type="text" name="email" class="formBox formBoxSmall">
+							</td>
+						</tr>
+						<tr>
+							<td class="formPadding">
+								<div class="formtext">
+									Display Name
+								</div>
+							</td>
+							<td class="formPadding">			
+								<input type="text" name="displayname" class="formBox formBoxSmall">
+							</td>
+						</tr>
+						<tr>
+							<td class="formPadding">
+								<div class="formtext">
+									Website
+								</div>
+							</td>
+							<td class="formPadding">
+								<input type="text" name="displayname" class="formBox formBoxSmall">
+							</td>
+						</tr>
+					</form>
+					</table>
+				</div>
+				<div class="linecontainerparent">
+					<div class="linecontainerchild">
+						<hr class="line">
 					</div>
-					<input type="text" name="displayname" class="formBox formBoxSmall">
-				</form>
-				<p class="otherText">
-					COMMENT
-				</p>
-				<hr class="line">
- 				<form class="form">
+					<p class="revisionStatus cutText">
+						COMMENTS
+					</p>
+				</div>
+			<div class="formContainer">
+ 				<form class="commentsForm">
  					<input type="text" name="comments" class="formBox formBoxLarge">
  				</form>
 				<button class="submitButton">
 					SUBMIT
 				</button>
-			<div class="comment">
-				<img class="userPic" src="http://placehold.it/50x50">
-				<p class="userName">User 1</p>
-				<p class="postDate">January 13, 2014</p>
-				<p class="commentText">
-					Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
-				</p>
-				<div class="subComments">
-					<div class="comment">
-						<img class="userPic" src="http://placehold.it/50x50">
-						<p class="userName">User 1</p>
-						<p class="postDate">January 13, 2014</p>
-						<p class="commentText">
-							Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
-						</p>
-					</div>
-					<div class="comment">
-						<img class="userPic" src="http://placehold.it/50x50">
-						<p class="userName">User 1</p>
-						<p class="postDate">January 13, 2014</p>
-						<p class="commentText">
-							Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
-						</p>
+			</div>
+
+
+<!-- HERE BEGIN ALL OF THE COMMENTS!!! -->
+
+		<div class="commentsContainer"
+			<div class="allofthecomments">
+				<div class="comment">
+					<img class="userPic" src="http://placehold.it/50x50">
+					<p class="userName">User 1</p>
+					<p class="postDate">January 13, 2014</p>
+					<p class="commentText">
+						Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
+					</p>
+					<div class="subComments">
+						<div class="comment">
+							<img class="userPic" src="http://placehold.it/50x50">
+							<p class="userName">User 1</p>
+							<p class="postDate">January 13, 2014</p>
+							<p class="commentText">
+								Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
+							</p>
+						</div>
+						<div class="comment">
+							<img class="userPic" src="http://placehold.it/50x50">
+							<p class="userName">User 1</p>
+							<p class="postDate">January 13, 2014</p>
+							<p class="commentText">
+								Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
+							</p>
+						</div>
 					</div>
 				</div>
+				<div class="comment">
+					<img class="userPic" src="http://placehold.it/50x50">
+					<p class="userName">User 1</p>
+					<p class="postDate">January 13, 2014</p>
+					<p class="commentText">
+						Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
+					</p>
+				</div>
 			</div>
-			<div class="comment">
-				<img class="userPic" src="http://placehold.it/50x50">
-				<p class="userName">User 1</p>
-				<p class="postDate">January 13, 2014</p>
-				<p class="commentText">
-					Mauris in purus cursus, sollicitudin ipsum in, sollicitudin nulla. Donec sagittis bibendum diam, nec gravida lacus dignissim eget. Nunc id dictum ex. Vivamus et imperdiet enim.
-				</p>
-			</div>
+			
+		</div>
 		</div>
 	</body>
 </html>
