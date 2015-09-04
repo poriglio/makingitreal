@@ -1,0 +1,95 @@
+body{
+	background: #34495e;
+	font-family: verdana, sans-serif;
+	font-weight: lighter;
+}
+
+*{
+	text-decoration: none;
+	margin: 0px;
+}
+
+
+
+
+
+
+/*GREEN BOX*/
+
+.box{
+	width: 100vw;
+}
+
+.titleBox{
+	height: 200px;
+	margin-top: 20px;
+	background: #2ecc71;
+	border-bottom: 5px solid #27ae60;
+	line-height: 200px;
+	color: white;
+}
+
+.mainTitle{
+	line-height: 1em;
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: left;
+	padding: 0.5em;
+}
+
+
+
+
+
+/*BLUE BOX*/
+
+.list{
+	list-style-type: none;
+}
+
+.navBox{
+	text-align: right;
+	background: #2c3e50;
+	border-bottom: 5px solid #34495e;
+}
+
+.navButton{
+	display: inline-block;
+	padding: 11px 17px 14px 17px;
+}
+
+.navButton a{
+	color: white;
+}
+
+
+
+
+
+/*SIDE NAV BOX*/
+
+.sideNavBox{
+	background: white;
+	border-bottom: 5px solid #7f8c8d;
+	overflow: auto;
+	text-align: center;
+}
+
+
+.sideNavTopList{
+	text-align: left;
+	display: inline-block;
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+
+
+
+/*CONTENT BOX*/
+
+.contentBox{
+	margin-bottom: 20px;
+	background: white;
+}
+
