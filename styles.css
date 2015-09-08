@@ -201,6 +201,9 @@ body{
 	display: inline-block;
 }
 
+
+/*ASSORTED TEXT*/
+
 .boldText{
 	font-weight: bold;
 }
@@ -208,6 +211,8 @@ body{
 .redText{
 	color: orangered;
 }
+
+
 
 .numberedList{
 	margin-bottom: 2rem;
