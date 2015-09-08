@@ -144,6 +144,10 @@ body{
 	margin-bottom: 1.5rem;
 }
 
+
+
+/*TABLE*/
+
 .table{
 	border-collapse: collapse;
 	margin-bottom: 2em;
@@ -154,19 +158,23 @@ body{
 	background: #bdc3c7;
 }
 
-.tableRowData{
+.tableData{
 	border: 1px solid #7f8c8d;
 	padding: 10px;
 	padding-right: 14px;
 }
 
-.linkButton{
+.tableButton{
 	text-align: center;
 	color: white;
 	background: #3498db;
 	padding: 6px 27px;
 	border-style: none;
 }
+
+
+
+/*CODE EXAMPLE*/
 
 .codeExample{
 	background: #bdc3c7;
@@ -178,6 +186,11 @@ body{
 .codeContainer{
 	display: inline;
 }
+
+
+
+
+/*BANNER IMAGE*/
 
 .bannerImageContainer{
 	margin-bottom: 1.5rem;
@@ -298,6 +311,7 @@ body{
 
 .comment{
 	text-align:left;
+	position: relative;
 }
 
 .userPic{
@@ -321,5 +335,7 @@ body{
 
 .subComments{
 	border-left: 1px solid gray;
+	position: relative;
+	left: 4rem;
 }
 
