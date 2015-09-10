@@ -1,50 +1,56 @@
+/*UNIVERSAL*/
+
 body{
 	background: #34495e;
 	font-family: verdana, sans-serif;
 	font-weight: lighter;
+	font-size: 12pt;
 }
 
 *{
 	text-decoration: none;
 	margin: 0px;
 	box-sizing: border-box;
+	padding: 0px;
+}
+
+.strong{
+	font-weight: bold;
+}
+
+.special{
+	color: orangered;
 }
 
 
 
 
 
-
-/*GREEN BOX*/
-
-.box{
-	width: 100%;
-	float: left;
-}
+/*TITLE BOX*/
 
 .titleBox{
-	height: 200px;
-	margin-top: 20px;
+	margin-top: 1.5rem;
+	line-height: 13.5rem;
 	background: #2ecc71;
-	border-bottom: 5px solid #27ae60;
-	line-height: 200px;
 	color: white;
+	border-bottom: 5px solid #27ae60;
 }
 
 .mainTitle{
-	line-height: 1em;
+	line-height: 1.5rem;
 	display: inline-block;
 	vertical-align: bottom;
-	text-align: left;
-	padding: 0.5em;
+	padding: 1rem;
 }
 
 
 
 
-/*BLUE BOX*/
 
-.list{
+
+/*MAIN NAV BOX*/
+
+.plainList{
 	list-style-type: none;
 }
 
@@ -56,7 +62,7 @@ body{
 
 .navButton{
 	display: inline-block;
-	padding: 11px 17px 14px 17px;
+	padding: 0.75rem 1rem 0.75rem 1rem;
 }
 
 .navButton a{
@@ -73,40 +79,29 @@ body{
 	background: white;
 	border-bottom: 5px solid #7f8c8d;
 	text-align: center;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	margin: auto;
-	overflow: hidden;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 }
 
-.sideNavContainer{
-	overflow: hidden;
+.sideNavTopList{
+	text-align: left;
 	display: inline-block;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .sideNavList{
 	position: relative;
 	left:8px;
-	padding: 0px;
-}
-
-.sideNavTopList{
-	float: left;
-	position: relative;
-	margin: 10px;
-	text-align: left;
-	display: inline-block;
-	list-style-type: none;
-	padding-left: 0px;
-}
-
-.sideNavButton{
-	padding: 1px;
-	margin: 4px;
+	margin-top: 0.3rem;
 }
 
 .sideNavTopButton a{
 	color: black;
+}
+
+.sideNavButton{
+	padding: 0.25rem;	
 }
 
 .sideNavButton a{
@@ -116,11 +111,15 @@ body{
 
 
 
+
+
+
+
 /*CONTENT BOX*/
 
 .contentBox{
 	padding: 3.5rem 2rem 5rem 2rem;
-	margin-bottom: 20px;
+	margin-bottom: 1.5rem;
 	background: #ecf0f1;
 	position: relative;
 }
@@ -186,13 +185,6 @@ body{
 	display: inline-block;
 }
 
-.boldText{
-	font-weight: bold;
-}
-
-.redText{
-	color: orangered;
-}
 
 .numberedList{
 	margin-bottom: 2rem;
@@ -325,7 +317,7 @@ body{
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 
 .topPageCentering{
 	margin: auto;
@@ -333,7 +325,7 @@ body{
 }
 
 .centeredBox{
-	width: 60%;
+	width: 769px;
 	display: block;
 	float: none;
 	margin: auto;
