@@ -1,3 +1,4 @@
+
 /*UNIVERSAL*/
 
 body{
@@ -73,6 +74,7 @@ body{
 
 
 
+
 /*SIDE NAV BOX*/
 
 .sideNavBox{
@@ -143,6 +145,7 @@ body{
 .table{
 	border-collapse: collapse;
 	margin-bottom: 2em;
+	font-size: 0.8rem;
 }
 
 .tableHeadRow{
@@ -225,6 +228,7 @@ body{
 
 .tableContainer{
 	text-align: center;
+	width: 100%;
 }
 
 .form{
@@ -232,7 +236,7 @@ body{
 }
 
 .formBoxSmall{
-	width: 100%;
+	width: 50vw;
 	height: 2rem;
 }
 
@@ -240,6 +244,7 @@ body{
 	margin-bottom: 4rem;
 	text-align: right;
 	display: inline-block;
+	width: 100%;
 }
 
 .formPadding{
@@ -341,4 +346,35 @@ body{
 		margin-bottom: 1.5rem;
 	}
 
+	.formBoxSmall{
+	width: 38rem;
+	}
+
 }
+
+@media screen and (min-width: 1175px){
+
+	.responsiveParent{
+		position: relative;
+	}
+
+	.sideNavBox{
+		position: absolute;
+		width: 10rem;
+		text-align: left;
+		right: -11.5rem;
+	}
+
+	.sideNavTopList{
+		text-align: inherit;
+	}
+
+}
+/*
+ul.plainList li {
+
+}
+
+.contentBox p {
+    
+}*/
